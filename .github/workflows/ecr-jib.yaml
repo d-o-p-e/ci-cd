@@ -23,6 +23,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: ${{ inputs.JAVA_VERSION }}
+        distribution: 'adopt'
     
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
